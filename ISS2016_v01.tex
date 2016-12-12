@@ -63,14 +63,6 @@ We evaluate this stiffnes as a spring constant since the dynamics of the electro
 In this paper, we describe the result of the vibration measurement of the SMB of 384~mm diameter.
 Since the typical aperture size of a CMB telescope is 400~mm, so that this diameter (D=384~mm) is close to an actual application.
 
-\begin{figure}[htbp]
-   \centering
-   \includegraphics[width=70mm]{D400mm.eps}
-   \caption{The experimental setup for the vibration measurements for $D=384$~mm}
-   \label{fig:d400}
-\end{figure}
-
-
 \section*{Experimental Setup}
 
 
@@ -86,37 +78,108 @@ The NdFeB ring magnet and the YBCO array are fabricated by Adelwitz Technologiez
 The YBCO array is submerged by the liquid nitrogen but the rotor mganet is exposed to the room environment.
 We set a space between the rotor magnet and YBCO array with aluminum plates at room temperature enviroment, and then a liquid nitrogen was poured.
 After the temperature of the YBCO array becomes below its transition temperature, the plates are removed for magnetic levitation.
-The levitation height, defined as the distance between the bottom of the rotor magnet and the top of the YBCO array, is controled by the tichness of the aluminum plate.
+The levitation height, defined as the distance between the bottom of the rotor magnet and the top of the YBCO array, is controled by the tickness of the aluminum plate.
 We measure the rotor vibration in the axial direction with four different levitation heights (3~mm, 6~mm, 9~mm and 12~mm).
+In order to enhance the vibration amplitude, an external impulse force was applied by hand in the axial direction.
 
 The displacement of the rotor is monitored by a laser displacement gauge (keyence LK-500),
 which is mounted by an aluminum frame jig at a distance of 260 mm from the top of the rotor magnet as shown in Figure \ref{fig:d400}.
 Since The displacement of the rotor magnet due to the vibration also affects the magnetic field,
-we also measure the magnetic field by a hall sensor mounted at the top surface of the YBCO array.
-
-\section*{Results of the vibration measurement}
-
-
-Figure \ref{fig:vibration_up} shows the laser gauge output and the hall sensor output as a function of time in top and bottom panels, respectively.
+we also measure the magnetic field by a Hall sensor mounted at the top surface of the YBCO array.
 
 \begin{figure}[htbp]
-  \begin{flushleft}
-    \begin{minipage}{0.4\hsize}
-      \includegraphics[width=60mm]{vibration_up.eps}
-      \caption{The laser gauge output (top) and the hall sensor output (bottom) as a function of time with the leviation height of 9~mm}
-      \label{fig:vibration_up}
-    \end{minipage}
-  \end{flushleft}
-  \begin{flushright}
-    \begin{minipage}{0.4\hsize}
-      \includegraphics[width=60mm]{SpringSystem.eps}
-      \caption{The power spectrum of the hall sensor output as a function of frequency for levitation height (h) of h=3~mm, 6~mm, 9~mm and 12~mm. }
-      \label{fig:vibration_fft}
-    \end{minipage}
-  \end{flushright}
+  \centering
+  \begin{minipage}{0.45\hsize}
+    \includegraphics[width=50mm]{D400mm.eps}
+    \caption{The experimental setup for the vibration measurements for $D=384$~mm}
+    \label{fig:d400}
+  \end{minipage}
+  \begin{minipage}{0.45\hsize}
+    \centering
+    \includegraphics[width=50mm]{SpringSystem.eps}
+    \caption{Mass-Spring-Damper model}
+    \label{fig:msd}
+  \end{minipage}
 \end{figure}
 
 
+\section*{Result and Discussion}
+
+An axial vibration of the rotor can be descrived by a damping motion of a mass-spring-damper model shown in Figure \ref{fig:msd}.
+The motion of this model is expressed by
+\begin{equation}
+  m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
+  \label{eq:damping_motion}
+\end{equation}
+where $m$ is the mass of the rotor (3.0~kg), $R$ is the damping coefficient and $k_{z}$ is the spring constant.
+Under the condition of the damping motion, the solution of the equation (\ref{eq:damping_motion}) is
+\begin{equation}
+  x = A \mathrm{e}^{- \zeta \omega_{0} t} \cos( \sqrt{1 - \zeta^{2}} \ \omega_{0} t + \phi),
+  \label{eq:damping}
+\end{equation}
+where $\zeta = R / 2 \sqrt{mk_{z}}$ is the damping ratio and $\omega_{0} = \sqrt{k_{z}/m}$ is the undamped angular frequency.
+The parameters of $A$ and $\phi$ are the amplitude and the phase determind by the magnitude and timing of the external impulse force.
+Thus, these values are changed every time.
+
+Figure \ref{fig:vibration_up} shows the laser gauge output and the Hall sensor output as a function of time at the levitation hegith of 9~mm.
+We fit the data with equation (\ref{eq:damping}) and derive the unknwon parameters of $\zeta$ and $\omega_{0}$ for each leviration height.
+The fitted parameters are summarized in Table \ref{tab:fit_result}.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|cccc|cccc|}
+     & \multicolumn{4}{|c|}{Laser gauge} & \multicolumn{4}{|c|}{Hall sensor} \\
+    h [mm]& $\zeta$ & $\omega_{0}$ & $R$ &$k_{z}$ & $\zeta$ & $\omega_{0}$ & $R$ &$k_{z}$ \\ \hline
+    3  & X & X & X & X & X & X & X & X \\
+    6  & X & X & X & X & X & X & X & X \\
+    9  & X & X & X & X & X & X & X & X \\
+    12 & X & X & X & X & X & X & X & X \\
+  \end{tabular}
+  \caption{The summary of the fit parameters from the vibration measurements. h is the levitation height. $\zeta$ and $\omega_{0}$ is the damping ratio and undamped angular frequency.
+    $R$ is the damping coefficient and $k_{z}$ is the spring constant.
+    \label{tab:fit_result}}
+\end{table}
+
+We also apply a Fourier transformation for the data of the Hall sensor output.
+
+
+blah blah blah
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=60mm]{vibration_up.eps}
+  \caption{The laser gauge output (top) and the Hall sensor output (bottom) as a function of time with the leviation height of 9~mm}
+  \label{fig:vibration_up}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=60mm]{vibration_fit.eps}
+  \caption{The laser gauge output (top) and the Hall sensor output (bottom) as a function of time with the leviation height of 9~mm}
+  \label{fig:vibration_up}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=60mm]{vibration_fft_B.eps}
+  \caption{The power spectrum of the Hall sensor output as a function of frequency for levitation height (h) of h=3~mm, 6~mm, 9~mm and 12~mm.}
+  \label{fig:vibration_fft}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=60mm]{SpringConstant.eps}
+  \caption{}
+  \label{fig:spring_constant}
+\end{figure}
+
+\section*{Conclusion}
+We have conducted the vibration measurements of the prototype SMB system with the diameter of $\phi$=384~mm for the polarization modulator used in CMB polarization experiments.
+From the measurement, the spring constant is in the order of XX~Nm and the damping coefficient is XX for each levitation height.
+The increase of the spring constant is important to minimize the deviation of the HWP optical axis.
+On the other hand, the increase of the damping coefficient is important to minimize the heat due to a disturbance.
+As a future study, it is important to design a magnetic circuit in order to increase the spring constant and the damping coefficient.
 
 \section*{Acknowledgment}
 The author would like to thank to Dr. H. Imada at ISAS/JAXA.
