@@ -45,7 +45,7 @@ One of the critical instruments for a precise measurement of the CMB polarizatio
 It consists of an optical element, a half-wave plate (HWP), and a rotational mechanism.
 The continuously rotating HWP modulates the CMB polarization signal synchronously at the four times of the rotational frequency of the HWP, a few Hz.
 %Since the intrinsic instrumental noise is not modulated, systematic uncertainties are significantly reduced.
-On the other hand, the continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the thermal emission of the HWP itself.
+The continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the thermal emission of the HWP itself.
 It is therefore necessary to use a rotational mechanism which allows to rotate with minimal heat dissipation at cryogenic temperature.
 
 In general mechanical bearings, there is too much frictional heat due to physical contact.
@@ -59,7 +59,7 @@ Currently, the CMB polarization experiments which consider to implements this sy
 
 For the polarization modulator, the SMB system has advantages in terms of heat.
 However, it is also necessary to consider the deviation of the optical axis of the HWP related to the stiffness of the SMB.
-We evaluate this stiffnes as a spring constant since the dynamics of the electromagnetic force of the SMB system can be analogied as a spring system.
+We evaluate this stiffnes as a spring constant since the dynamics of the electromagnetic force of the SMB system can be analogied as a simple mass-spring-damper system.
 
 In this paper, we describe the result of the vibration measurement of the SMB of 384~mm diameter.
 Since the typical aperture size of a CMB telescope is 400~mm, so that this diameter (D=384~mm) is close to an actual application.
@@ -154,12 +154,6 @@ The parameters between the laser gauge and the Hall sensor are consistent within
 \end{table}
 \renewcommand{\arraystretch}{1.0}
 
-We also apply a Fourier transformation for the data of the Hall sensor output.
-
-
-blah blah blah
-
-
 \begin{figure}[htbp]
   \centering
   \begin{minipage}{0.45\hsize}
@@ -171,8 +165,28 @@ blah blah blah
   \end{minipage}
   \caption{(Left) The laser gauge output and the Hall sensor output as a function of time with the leviation height of 9~mm in top and bottom panels, respectivery.
     (Right) The fitting result of the Hall sensor output with the levitation height of 12~mm.}
-  \label{vibration}
+  \label{fig:vibration}
 \end{figure}
+
+We also perform a Fourier analyse to the data of the Hall sensor output.
+Figure \ref{fig:fft} (left) shows the result of performing Fourier transform for levitation height of 3~mm, 6~mm, 9~mm and 12~mm.
+There are remarkable peaks in each levitation height.
+These valuse correspond to the specific frequency $f_{0}$ of the SMB system.
+The spring constant $k_{z}$ is derived by
+\begin{equation}
+  k_{z} = m (2 \pi f_{0})^{2}.
+\end{equation}
+The spring constants from the Fourier analyse are compared with the fitting result in the Figure \ref{fft} (Right).
+These valuse are consistent between the Fourier analyse and the fitting, and they are in order of $10^{4} \sim 10^{5}$ depending on levitation heights.
+
+For the polarization modulator, the typical requirement of the deviation of the HWP optical axis is less than 1~mm.
+It corresponds to the spring constant of >$10^{6}$~Nm when the total mass of the rotor including the mass of the HWP is >30~kg.
+Since the spring constant is propotional to the mass of the rotor, the result of this measurement can be scaled by factor 10.
+Therefore, the current SMB system satisfies the requirement if the levitation height is less then 6~mm.
+The damping coefficient corresponds to an energy loss by an eddy current, and it leads to the heating of the HWP.
+The requirement of the damping coefficient depends on the experiment, while we indicate it is adjustable by the levitation height.
+The further effort of
+
 
 \begin{figure}[htbp]
   \centering
@@ -195,7 +209,7 @@ We have conducted the vibration measurements of the prototype SMB system with th
 From the measurement, we derive the spring constant and the damping coefficient for each levitation height.
 If we assume the typical mass of the HWP mounted on the rotor is $\sim$ 30~kg, the spring constant is > $10^{6}$~Nm when the levitation height is less than 6~mm.
 
-the spring constant is in the order of $10^{4} \sim 10^{5}$~Nm and the damping coefficient is 15~45 depending on levitation height.
+the spring constant is in the order of $10^{4} \sim 10^{5}$~Nm and the damping coefficient is $15\sim45$ depending on levitation height.
 The increase of the spring constant is important to minimize the deviation of the HWP optical axis.
 On the other hand, the increase of the damping coefficient is important to minimize the heat due to a disturbance.
 As a future study, it is important to design a magnetic circuit in order to increase the spring constant and the damping coefficient.
