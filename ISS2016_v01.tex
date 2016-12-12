@@ -67,7 +67,7 @@ Since the typical aperture size of a CMB telescope is 400~mm, so that this diame
 \section*{Experimental Setup}
 
 
-We conducted vibration measurment using a Styro- foam bucket with liquid nitrogen as shown in Figure \ref{fig:d400}.
+We conducted vibration measurment using a Styro- foam bucket with liquid nitrogen as shown in Figure \ref{fig:d400} (left).
 Although the SMB system is operated inside the 4~K cryostat in an actual CMB observation, a liquid nitrogen temperature (77~K) is sufficient for the vibration measurement.
 
 We prepare the SMB system with inner diameter of 384~mm.
@@ -84,7 +84,7 @@ We measure the rotor vibration in the axial direction with four different levita
 In order to enhance the vibration amplitude, an external impulse force was applied by hand in the axial direction.
 
 The displacement of the rotor is monitored by a laser displacement gauge (keyence LK-500),
-which is mounted by an aluminum frame jig at a distance of 260 mm from the top of the rotor magnet as shown in Figure \ref{fig:d400}.
+which is mounted by an aluminum frame jig at a distance of 260 mm from the top of the rotor magnet as shown in Figure \ref{fig:d400} (left).
 Since The displacement of the rotor magnet due to the vibration also affects the magnetic field,
 we also measure the magnetic field by a Hall sensor mounted at the top surface of the YBCO array.
 
@@ -92,21 +92,19 @@ we also measure the magnetic field by a Hall sensor mounted at the top surface o
   \centering
   \begin{minipage}{0.6\hsize}
     \includegraphics[width=85mm]{D400mm.eps}
-    \caption{The experimental setup for the vibration measurements for $D=384$~mm}
-    \label{fig:d400}
   \end{minipage}
   \begin{minipage}{0.3\hsize}
     \centering
     \includegraphics[width=50mm]{SpringSystem.eps}
-    \caption{Mass-Spring-Damper model}
-    \label{fig:msd}
   \end{minipage}
+  \caption{(Left) The experimental setup for the vibration measurements for $D=384$~mm. (Right) Mass-Spring-Damper model.}
+  \label{fig:d400}
 \end{figure}
 
 
 \section*{Result and Discussion}
 
-An axial vibration of the rotor can be descrived by a damping motion of a mass-spring-damper model shown in Figure \ref{fig:msd}.
+An axial vibration of the rotor can be descrived by a damping motion of a mass-spring-damper model shown in Figure \ref{fig:d400} (right).
 The motion of this model is expressed by
 \begin{equation}
   m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
@@ -150,7 +148,7 @@ The parameters between the laser gauge and the Hall sensor are consistent within
     \hline
 
   \end{tabular}
-  \caption{The summary of the fit parameters from the vibration measurements. h is the levitation height. $\zeta$ and $\omega_{0}$ is the damping ratio and undamped angular frequency.
+  \caption{The summary of the fitted parameters from the vibration measurements. h is the levitation height. $\zeta$ and $\omega_{0}$ is the damping ratio and undamped angular frequency.
     $R$ is the damping coefficient and $k_{z}$ is the spring constant.
     \label{tab:fit_result}}
 \end{table}
@@ -171,8 +169,8 @@ blah blah blah
     \centering
     \includegraphics[width=70mm]{vibration_fit.eps}
   \end{minipage}
-  \caption{The laser gauge output and the Hall sensor output as a function of time with the leviation height of 9~mm in top and bottom panels, respectivery (left).
-    The fitting result of the Hall sensor output with the levitation height of 12~mm (right).}
+  \caption{(Left) The laser gauge output and the Hall sensor output as a function of time with the leviation height of 9~mm in top and bottom panels, respectivery.
+    (Right) The fitting result of the Hall sensor output with the levitation height of 12~mm.}
   \label{vibration}
 \end{figure}
 
@@ -185,8 +183,9 @@ blah blah blah
     \centering
     \includegraphics[width=70mm]{SpringConstant.eps}
   \end{minipage}
-  \caption{The power spectrum of the Hall sensor output as a function of frequency for levitation height of 3~mm, 6~mm, 9~mm and 12~mm (left).
-    The spring constant as a function of levitation heights, derived from the fit of damping model (red) and from the Fourier transformation (blue).}
+  \caption{(Left) The power spectrum of the Hall sensor output as a function of frequency for levitation height of 3~mm, 6~mm, 9~mm and 12~mm.
+    (Right) The spring constant and the damping coefficient as a function of levitation heights.
+    The red and green points are derived from the fit with damping model, and the blue points are derived from the Fourier transformation.}
   \label{fig:fft}
 \end{figure}
 
