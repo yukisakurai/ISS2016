@@ -1,6 +1,7 @@
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage{array}
 \newcommand{\cred}[1]{{\color{red}#1}}
 
 \begin{document}
@@ -89,12 +90,12 @@ we also measure the magnetic field by a Hall sensor mounted at the top surface o
 
 \begin{figure}[htbp]
   \centering
-  \begin{minipage}{0.45\hsize}
-    \includegraphics[width=50mm]{D400mm.eps}
+  \begin{minipage}{0.6\hsize}
+    \includegraphics[width=85mm]{D400mm.eps}
     \caption{The experimental setup for the vibration measurements for $D=384$~mm}
     \label{fig:d400}
   \end{minipage}
-  \begin{minipage}{0.45\hsize}
+  \begin{minipage}{0.3\hsize}
     \centering
     \includegraphics[width=50mm]{SpringSystem.eps}
     \caption{Mass-Spring-Damper model}
@@ -123,60 +124,79 @@ Thus, these values are changed every time.
 
 Figure \ref{fig:vibration_up} shows the laser gauge output and the Hall sensor output as a function of time at the levitation hegith of 9~mm.
 We fit the data with equation (\ref{eq:damping}) and derive the unknwon parameters of $\zeta$ and $\omega_{0}$ for each leviration height.
+The fitting result of the Hall sensor output with the levitation height of 12~mm is shown the right plot of Figure \ref{fig:vibration}.
 The fitted parameters are summarized in Table \ref{tab:fit_result}.
+The parameters between the laser gauge and the Hall sensor are consistent within 10~\%.
 
+\renewcommand{\arraystretch}{1.2}
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{c|cccc|cccc|}
-     & \multicolumn{4}{|c|}{Ha;; sensor} & \multicolumn{4}{|c|}{Laser} \\
-    h [mm]& $\zeta$ & $\omega_{0}$ & $R$ &$k_{z}$ & $\zeta$ & $\omega_{0}$ & $R$ &$k_{z}$ \\ \hline
-    3  & 0.024 & 299.335 & 43.5 & 2.7$\times10^{5}$ & X & X & X & X \\
-    6  & 0.023 & 195.731 & 27.1 & 1.2$\times10^{5}$ & X & X & X & X \\
-    9  & 0.024 & 136.369 & 20.2 & 5.6$\times10^{4}$ & X & X & X & X \\
-    12 & 0.024 & 107.970 & 15.722 & 3.5$\times10^{4}$ & X & X & X & X \\
+  \newcolumntype{Y}{>{\centering\arraybackslash}p{18mm}}
+  \begin{tabular}{c|YYYY}
+    \hline
+    & \multicolumn{4}{c}{Laser gauge} \\
+    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [Nm] \\ \hline
+    3  & 2.1$\times10^{-2}$ & 331.8 & 42.0 & 3.3$\times10^{5}$ \\
+    6  & 2.7$\times10^{-2}$ & 194.0 & 31.0 & 1.1$\times10^{5}$ \\
+    9  & 2.3$\times10^{-2}$ & 138.2 & 19.1 & 5.7$\times10^{4}$ \\
+    12 & 1.8$\times10^{-2}$ & 111.7 & 11.8 & 3.7$\times10^{4}$ \\
+    \hline
+    & \multicolumn{4}{c}{Hall sensor} \\
+    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [Nm] \\ \hline
+    3  & 2.4$\times10^{-2}$ & 299.3 & 43.5 & 2.7$\times10^{5}$ \\
+    6  & 2.3$\times10^{-2}$ & 195.7 & 27.1 & 1.2$\times10^{5}$ \\
+    9  & 2.4$\times10^{-2}$ & 136.4 & 20.2 & 5.6$\times10^{4}$ \\
+    12 & 2.4$\times10^{-2}$ & 108.0 & 15.7 & 3.5$\times10^{4}$ \\
+    \hline
+
   \end{tabular}
   \caption{The summary of the fit parameters from the vibration measurements. h is the levitation height. $\zeta$ and $\omega_{0}$ is the damping ratio and undamped angular frequency.
     $R$ is the damping coefficient and $k_{z}$ is the spring constant.
     \label{tab:fit_result}}
 \end{table}
+\renewcommand{\arraystretch}{1.0}
 
 We also apply a Fourier transformation for the data of the Hall sensor output.
 
 
 blah blah blah
 
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=60mm]{vibration_up.eps}
-  \caption{The laser gauge output (top) and the Hall sensor output (bottom) as a function of time with the leviation height of 9~mm}
-  \label{fig:vibration_up}
+  \begin{minipage}{0.45\hsize}
+  \includegraphics[width=70mm]{vibration_up.eps}
+  \end{minipage}
+  \begin{minipage}{0.45\hsize}
+    \centering
+    \includegraphics[width=70mm]{vibration_fit.eps}
+  \end{minipage}
+  \caption{The laser gauge output and the Hall sensor output as a function of time with the leviation height of 9~mm in top and bottom panels, respectivery (left).
+    The fitting result of the Hall sensor output with the levitation height of 12~mm (right).}
+  \label{vibration}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=60mm]{vibration_fit.eps}
-  \caption{The laser gauge output (top) and the Hall sensor output (bottom) as a function of time with the leviation height of 9~mm}
-  \label{fig:vibration_up}
+  \begin{minipage}{0.45\hsize}
+    \includegraphics[width=70mm]{vibration_fft_B.eps}
+  \end{minipage}
+  \begin{minipage}{0.45\hsize}
+    \centering
+    \includegraphics[width=70mm]{SpringConstant.eps}
+  \end{minipage}
+  \caption{The power spectrum of the Hall sensor output as a function of frequency for levitation height of 3~mm, 6~mm, 9~mm and 12~mm (left).
+    The spring constant as a function of levitation heights, derived from the fit of damping model (red) and from the Fourier transformation (blue).}
+  \label{fig:fft}
 \end{figure}
 
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=60mm]{vibration_fft_B.eps}
-  \caption{The power spectrum of the Hall sensor output as a function of frequency for levitation height (h) of h=3~mm, 6~mm, 9~mm and 12~mm.}
-  \label{fig:vibration_fft}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=60mm]{SpringConstant.eps}
-  \caption{}
-  \label{fig:spring_constant}
-\end{figure}
 
 \section*{Conclusion}
 We have conducted the vibration measurements of the prototype SMB system with the diameter of $\phi$=384~mm for the polarization modulator used in CMB polarization experiments.
-From the measurement, the spring constant is in the order of XX~Nm and the damping coefficient is XX for each levitation height.
+From the measurement, we derive the spring constant and the damping coefficient for each levitation height.
+If we assume the typical mass of the HWP mounted on the rotor is $\sim$ 30~kg, the spring constant is > $10^{6}$~Nm when the levitation height is less than 6~mm.
+
+the spring constant is in the order of $10^{4} \sim 10^{5}$~Nm and the damping coefficient is 15~45 depending on levitation height.
 The increase of the spring constant is important to minimize the deviation of the HWP optical axis.
 On the other hand, the increase of the damping coefficient is important to minimize the heat due to a disturbance.
 As a future study, it is important to design a magnetic circuit in order to increase the spring constant and the damping coefficient.

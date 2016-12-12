@@ -1,11 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.3.8)  10 DEC 2016 09:55
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016/MacPorts 2016_1) (preloaded format=platex 2016.7.5)  12 DEC 2016 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ISS2016_v01.tex
+**ISS2016_v01
 (./ISS2016_v01.tex
-pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/01/01> patch level 0)
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+pLaTeX2e <2016/05/07> (based on LaTeX2e <2016/03/31>)
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./jpconf.cls
 Document Class: jpconf 2007/03/07 v1.1 LaTeX class for Journal of Physics: Conf
 erence Series
@@ -27,140 +27,144 @@ File: jpconf11.clo 2005/05/04 v1.0 LaTeX2e file (size option)
 \bibindent=\dimen119
 \c@eqnval=\count89
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 94.
+Package graphics Info: Driver file: dvips.def on input line 96.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 142.
+Package color Info: Driver file: dvips.def on input line 144.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
-No file ISS2016_v01.aux.
+(/opt/local/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen122
+\extrarowheight=\dimen123
+\NC@list=\toks16
+\extratabsurround=\skip44
+\backup@length=\skip45
+
+
+LaTeX Warning: Command \@xhline  has changed.
+               Check if current package is valid.
+
+) (./ISS2016_v01.aux)
 \openout1 = `ISS2016_v01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 7.
+(Font)              size <17.28> substituted on input line 8.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <18.06749> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <18.06749> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 7.
+(Font)              size <17.28> substituted on input line 8.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 9.
+(Font)              <10.95> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
+(Font)              <6> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 15.
+(Font)              <9> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
+(Font)              <5> on input line 16.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
-
-LaTeX Warning: Citation `inflation_sato' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Citation `inflation_guth' on page 1 undefined on input line 36.
-
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
 [1
 
 ]
 
-LaTeX Warning: Citation `smb' on page 2 undefined on input line 51.
-
-
-LaTeX Warning: Citation `ebex' on page 2 undefined on input line 56.
-
-
-LaTeX Warning: Citation `litebird' on page 2 undefined on input line 57.
-
-File: D400mm.eps Graphic file (type eps)
-<D400mm.eps>
-
-LaTeX Warning: Reference `fig:d400' on page 2 undefined on input line 77.
+LaTeX Warning: Citation `ATZ' on page 2 undefined on input line 78.
 
 [2]
+File: D400mm.eps Graphic file (type eps)
+ <D400mm.eps>
+File: SpringSystem.eps Graphic file (type eps)
+ <SpringSystem.eps>
+Overfull \hbox (5.68918pt too wide) in paragraph at lines 100--101
+ [][] 
+ []
 
-LaTeX Warning: Citation `ATZ' on page 3 undefined on input line 85.
 
-
-LaTeX Warning: Reference `fig:d400' on page 3 undefined on input line 93.
+Underfull \hbox (badness 1715) in paragraph at lines 101--101
+[]\OT1/cmr/bx/n/10.95 Figure 2. \OT1/cmr/m/n/10.95 Mass-Spring-
+ []
 
 
 LaTeX Warning: Reference `fig:vibration_up' on page 3 undefined on input line 1
-00.
+25.
+
+
+LaTeX Warning: Reference `fig:vibration' on page 3 undefined on input line 127.
+
 
 File: vibration_up.eps Graphic file (type eps)
 <vibration_up.eps>
-Underfull \hbox (badness 2707) in paragraph at lines 106--106
-\OT1/cmr/m/n/10.95 (top) and the hall sensor output
- []
+File: vibration_fit.eps Graphic file (type eps)
+ <vibration_fit.eps>
+File: vibration_fft_B.eps Graphic file (type eps)
+ <vibration_fft_B.eps>
+File: SpringConstant.eps Graphic file (type eps)
 
-File: SpringSystem.eps Graphic file (type eps)
-<SpringSystem.eps>
+<SpringConstant.eps> [3] [4]
 Missing character: There is no ^^e2 in font cmr9!
 Missing character: There is no ^^80 in font cmr9!
 Missing character: There is no ^^93 in font cmr9!
- [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-(./ISS2016_v01.aux)
+ [5] (./ISS2016_v01.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
@@ -168,17 +172,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 939 strings out of 493777
- 10806 string characters out of 6151335
- 73280 words of memory out of 5000000
- 4468 multiletter control sequences out of 15000+600000
- 15176 words of font info for 59 fonts, out of 8000000 for 9000
+ 1012 strings out of 493693
+ 11640 string characters out of 6151236
+ 80149 words of memory out of 5000000
+ 4601 multiletter control sequences out of 15000+600000
+ 15162 words of font info for 59 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,19p,316b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,12n,19p,312b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ISS2016_v01.dvi (4 pages, 14704 bytes).
+Output written on ISS2016_v01.dvi (5 pages, 20448 bytes).
