@@ -49,22 +49,35 @@ The continuously rotating HWP modulates the CMB polarization signal synchronousl
 The continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the excess thermal emission of the HWP itself to the detector.
 It is therefore necessary to use a rotational mechanism which allows to rotate with minimal heat dissipation at cryogenic temperature.
 
-In general mechanical bearings produces too much heat due to friction from a physical contact.
-Thus, a superconducting magnetic bearing (SMB) is a good candidate for the rotational mechanism~\cite{smb}.
-The SMB is a rotational bearing utilizing magnetic levitation by the type II superconductor and the magnetic field from a permanent magnet, and thus there is no physical contact between a rotor and a stator.
+An superconducting magnetic bearing (SMB) is a contactless bearing~\cite{smb}. 
+it employs an array of high temperature superconductor tiles as a stator and a permanent magnet as a rotor.
+The rotor levitates above a stator and spins without contact. 
+There is no friction due to the physical contact, and thus this technology is well matched for use in the polarization modulator, which is required to operate at the cryogenic temperature with minimal heat dissipation.
+%In general mechanical bearings produces too much heat due to friction from a physical contact.
+%Thus, a superconducting magnetic bearing (SMB) is a good candidate for the rotational mechanism~\cite{smb}.
+%The SMB is a rotational bearing utilizing magnetic levitation by the type II superconductor and the magnetic field from a permanent magnet, and thus there is no physical contact between a rotor and a stator.
+This unique application is first investigated for use in a balloon-borne CMB polarization experiment, called EBEX~\cite{ebex}. 
+The successful implementation accelerates the interest for further development toward the next generation experiment from a ground telescope to a satellite mission~\cite{litebird}.
 
-\cred{tomo: continue editing from here}It is possible to achieve minimal heat dissipation at cryogenic temperature with the SMB.
-The SMB is developed mainly for industries such as flywheel energy storage,
-although the polarization modulator is one of unique applications and it plays critical role in the CMB polarization experiments.
-A balloon experiment called EBEX has succeeded the CMB polarization observation with the polarization modulator employing the SMB system \cite{ebex}.
-Currently, the CMB polarization experiments which consider to implements this system are increasing on the ground and even on the satellites \cite{litebird}.
+While the heat dissipation is expected to be smaller than that from a conventional mechanical bearing, the stiffness of the rotor over the stator is expected to be less rigid as compare to the mechanical bearing. 
+Therefore, the levitation based bearing has an inherent tradeoff between the heat dissipation and the stiffness.
+In this paper, we discuss the design tradeoff for use of this SMB technology for a future CMB polarization experiment, in particular for use in space. 
+We present our prototype SMB system, rotor diameter of 384~mm, and the measurements of the spring constant and the damping to characterize the mechanical properties.
+In order to characterize the mechanical properties, we use a laser interferometer, which we can use in a lab but cannot use during observations. 
+As an alternative solution, we also introduce a Hall sensor to monitor the mechanical properties simultaneously.
+We discuss the consistency between the two independent measurements and propose the concise passive technic to monitor the vibrational motion of the rotor magnet at the cryogenic temperature. 
+Finally we projects the results toward the design of the SMB system for the polarization modulator. 
+%\cred{tomo: continue editing from here}It is possible to achieve minimal heat dissipation at cryogenic temperature with the SMB.
+%The SMB is developed mainly for industries such as flywheel energy storage,
+%although the polarization modulator is one of unique applications and it plays critical role in the CMB polarization experiments.
+%A balloon experiment called EBEX has succeeded the CMB polarization observation with the polarization modulator employing the SMB system \cite{ebex}.
+%Currently, the CMB polarization experiments which consider to implements this system are increasing on the ground and even on the satellites \cite{litebird}.
 
-For the polarization modulator, the SMB system has advantages in terms of heat.
-However, it is also necessary to consider the deviation of the optical axis of the HWP related to the stiffness of the SMB.
-We evaluate this stiffens as a spring constant since the dynamics of the electromagnetic force of the SMB system can be analogized as a simple mass-spring-damper system.
-
-In this paper, we describe the result of the vibration measurement of the SMB of 384~mm diameter.
-Since the typical aperture size of a CMB telescope is 400~mm, so that this diameter (D=384~mm) is close to an actual application.
+%For the polarization modulator, the SMB system has advantages in terms of heat.
+%However, it is also necessary to consider the deviation of the optical axis of the HWP related to the stiffness of the SMB.
+%We evaluate this stiffens as a spring constant since the dynamics of the electromagnetic force of the SMB system can be analogized as a simple mass-spring-damper system.
+%In this paper, we describe the result of the vibration measurement of the SMB of 384~mm diameter.
+%Since the typical aperture size of a CMB telescope is 400~mm, so that this diameter (D=384~mm) is close to an actual application.
 
 \section*{Experimental Setup}
 
@@ -231,7 +244,7 @@ A. H. Guth, "The Inflationary Universe: A Possible Solution to the Horizon and F
 \bibitem{smb}
 J. Hull, Topical review: Superconducting bearings, Superconductor Science, 110, 140, Technology 13 (1).
 \bibitem{ebex}
-J. Klein et al.,"A cryogenic half-wave plate polarimeter using a superconducting magnetic bearing," in Proc. 8th Cryogen. Opt. Syst. Instrum., San Diego, CA, USA, Aug. 2011, pp. 1–10.
+J. Klein et al.,"A cryogenic half-wave plate polarimeter using a superconducting magnetic bearing," in Proc. 8th Cryogen. Opt. Syst. Instrum., San Diego, CA, USA, Aug. 2011, pp. 1-10.
 \bibitem{litebird}
 T. Masumura et al., "LiteBIRD: mission overview and design tradeoffs", Proc. SPIE 9143, Space Telescopes and Instrumentation 2014, 91431F, Aug. 2014.
 \bibitem{matsumura_eucas2015}
