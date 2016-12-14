@@ -7,7 +7,7 @@
 \begin{document}
 \title{Vibrational characteristics of a superconducting magnetic bearing employed for a prototype polarization modulator}
 
-\author{Yuki Sakurai$^{1}$, Tomotake Matsumura$^{1}$, Jimmie Sugai$^{1}$, Babushka Katayama$^{1}$, Hiroyuki Ohsaki$^{2}$, Yutaka Terao$^{2}$, Yusuke Terachi$^{2}$, Hirokazu Kataza$^{3}$, Shin Utsunomiya$^{1}$, Ryo Yamamoto$^{3}$}
+\author{Yuki Sakurai$^{1}$, Tomotake Matsumura$^{1}$, Hajime Sugai$^{1}$, Nobuhiko Katayama$^{1}$, Hiroyuki Ohsaki$^{2}$, Yutaka Terao$^{2}$, Yusuke Terachi$^{2}$, Hirokazu Kataza$^{3}$, Shin Utsunomiya$^{1}$, Ryo Yamamoto$^{3}$}
 \vspace{2mm}
 \address{
 $^{1}$Kavli Institute for the Physics and Mathematics of the Universe (WPI),The University of Tokyo Institutes for Advanced Study, The University of Tokyo, 5-1-5 Kashiwanoha, Kashiwa, Chiba 277-8583, Japan \\
@@ -18,39 +18,41 @@ $^{3}$Japan Aerospace Exploration Agency, Institute of Space and Astronautical S
 \ead{yuki.sakurai@ipmu.jp, tomotake.matsumura@ipmu.jp}
 
 \begin{abstract}
-We present the vibrational characteristics of a levitating rotor in a superconducting magnetic bearing (SMB) system operating at below 10 K.
+We present the vibrational characteristics of a levitating rotor in a superconducting magnetic bearing (SMB) system operating at below 10~K.
 We develop a polarization modulator that requires a continuously rotating optical element, called half-wave plate (HWP), for a cosmic microwave background polarization experiment.
-The HWP has to operate at the temperature below 10 K, and thus an SMB provides a smooth rotation of the HWP at the cryogenic temperature at about 10K with minimal heat dissipation.
+The HWP has to operate at the temperature below 10~K, and thus an SMB provides a smooth rotation of the HWP at the cryogenic temperature of about 10~K with minimal heat dissipation.
 In order to understand the potential interference to the cosmological observations due to the vibration of the HWP,
 it is essential to characterize the vibrational properties of the levitating rotor of the SMB.
-We constructed a prototype model that consists of an SMB with an array of high temperature superconductors, YBCO, and a permanent magnet ring.
-The rotor position is monitored by the laser displacement gauge, and the cryogenic Hall sensor via the magnetic field.
+We constructed a prototype model that consists of an SMB with an array of high temperature superconductors, YBCO, and a permanent magnet ring, NdFeB.
+The rotor position is monitored by a laser displacement gauge, and a cryogenic Hall sensor via the magnetic field.
 In this presentation, we present the measurement results of the vibration characteristics using our prototype SMB system.
-We discuss the spring constant and the magnetic field inhomogeneity of the SMB and sub-components including a rotation frequency monitoring system, a holder mechanism, and drive system.
-Finally, we discuss the projected performance of this technology toward the use in future space missions.
+%We discuss the measurement of the spring constant using our prototype system.
+%and the magnetic field inhomogeneity of the SMB and sub-components including a rotation frequency monitoring system, a holder mechanism, and drive system.
+We characterize the vibrational properties as the spring constant and the damping, and discuss the projected performance of this technology toward the use in future space missions.
 \end{abstract}
 
 \section*{Introduction}
 
-A cosmic microwave background (CMB) is electromagnetic microwave radiation from the big bang of the universe.
-It is still observable isotropically in whole sky today.
+A cosmic microwave background (CMB) is electromagnetic microwave radiation from the big bang.
+It is still observable isotropically from the whole sky today.
 One of most important research topics in the current cosmology and high-energy physics is to study the cosmic inflation theory, which predicts a rapid expansion of the universe after $\sim 10^{-38}$ seconds from the beginning of the universe~\cite{inflation_sato,inflation_guth}.
 The inflation solves several mysteries of the standard cosmology and it can provide a foothold for new physics in high energy physics.
 The theory predicts that the inflation left the divergence free pattern in the CMB polarization,  called "B-mode".
 Therefore, the experimental discovery of the cosmic inflation is possible by observing the CMB B-mode polarization.
 A world-wide keen discovery race is spreading among many CMB polarization experiments.
-Along with that, the instrumental development has progressed remarkably.
+Correspondingly, the instrumental development has progressed remarkably.
 
 One of the critical instruments for a precise measurement of the CMB polarization is a "polarization modulator".
 It consists of an optical element, a half-wave plate (HWP), and a rotational mechanism.
 The continuously rotating HWP modulates the CMB polarization signal synchronously at the four times of the rotational frequency of the HWP, a few Hz.
 %Since the intrinsic instrumental noise is not modulated, systematic uncertainties are significantly reduced.
-The continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the thermal emission of the HWP itself.
+The continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the excess thermal emission of the HWP itself to the detector.
 It is therefore necessary to use a rotational mechanism which allows to rotate with minimal heat dissipation at cryogenic temperature.
 
-In general mechanical bearings, there is too much frictional heat due to physical contact.
+In general mechanical bearings produces too much heat due to friction from a physical contact.
 Thus, a superconducting magnetic bearing (SMB) is a good candidate for the rotational mechanism~\cite{smb}.
 The SMB is a rotational bearing utilizing magnetic levitation by the type II superconductor and the magnetic field from a permanent magnet, and thus there is no physical contact between a rotor and a stator.
+
 \cred{tomo: continue editing from here}It is possible to achieve minimal heat dissipation at cryogenic temperature with the SMB.
 The SMB is developed mainly for industries such as flywheel energy storage,
 although the polarization modulator is one of unique applications and it plays critical role in the CMB polarization experiments.
@@ -72,7 +74,7 @@ Although the SMB system is operated inside the 4~K cryostat in an actual CMB obs
 
 We prepare the SMB system with inner diameter of 384~mm.
 Due to the relatively large diameter, The ring shaped magnet, which consists of 16 segmented NdFeB magnets, are used as the rotor magnet.
-Each segmented magnet is magnetized axially with the magnetic remnance of 1.24 T.
+Each segmented magnet is magnetized axially with the magnetic remnance of 1.24~T.
 A YBa$_{2}$Cu$_{3}$O$_{\mathrm{x}}$ (YBCO) superconductor is used as the stator, which is one of High Temperature Superconductors and its transition temperature is $\sim$ 95~K.
 The YBCO array is formed in a ring shape using three-seeded YBCO tiles.
 The NdFeB ring magnet and the YBCO array are fabricated by Adelwitz Technologiezentrum GmbH (ATZ) company in Germany \cite{ATZ}.
@@ -84,7 +86,7 @@ We measure the rotor vibration in the axial direction with four different levita
 In order to enhance the vibration amplitude, an external impulse force was applied by hand in the axial direction.
 
 The displacement of the rotor is monitored by a laser displacement gauge (keyence LK-500),
-which is mounted by an aluminum frame jig at a distance of 260 mm from the top of the rotor magnet as shown in Figure \ref{fig:d400} (left).
+which is mounted by an aluminum frame jig at a distance of 260~mm from the top of the rotor magnet as shown in Figure \ref{fig:d400} (left).
 Since The displacement of the rotor magnet due to the vibration also affects the magnetic field,
 we also measure the magnetic field by a Hall sensor mounted at the top surface of the YBCO array.
 
