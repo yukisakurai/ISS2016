@@ -49,24 +49,24 @@ The continuously rotating HWP modulates the CMB polarization signal synchronousl
 The continuously rotating HWP have to be maintained at cryogenic temperature ($\sim$ 10~K) in order to reduce the detector noise originating from the excess thermal emission of the HWP itself to the detector.
 It is therefore necessary to use a rotational mechanism which allows to rotate with minimal heat dissipation at cryogenic temperature.
 
-An superconducting magnetic bearing (SMB) is a contactless bearing~\cite{smb}. 
+An superconducting magnetic bearing (SMB) is a contactless bearing~\cite{smb}.
 it employs an array of high temperature superconductor tiles as a stator and a permanent magnet as a rotor.
-The rotor levitates above a stator and spins without contact. 
+The rotor levitates above a stator and spins without contact.
 There is no friction due to the physical contact, and thus this technology is well matched for use in the polarization modulator, which is required to operate at the cryogenic temperature with minimal heat dissipation.
 %In general mechanical bearings produces too much heat due to friction from a physical contact.
 %Thus, a superconducting magnetic bearing (SMB) is a good candidate for the rotational mechanism~\cite{smb}.
 %The SMB is a rotational bearing utilizing magnetic levitation by the type II superconductor and the magnetic field from a permanent magnet, and thus there is no physical contact between a rotor and a stator.
-This unique application is first investigated for use in a balloon-borne CMB polarization experiment, called EBEX~\cite{ebex}. 
+This unique application is first investigated for use in a balloon-borne CMB polarization experiment, called EBEX~\cite{ebex}.
 The successful implementation accelerates the interest for further development toward the next generation experiment from a ground telescope to a satellite mission~\cite{litebird}.
 
-While the heat dissipation is expected to be smaller than that from a conventional mechanical bearing, the stiffness of the rotor over the stator is expected to be less rigid as compare to the mechanical bearing. 
+While the heat dissipation is expected to be smaller than that from a conventional mechanical bearing, the stiffness of the rotor over the stator is expected to be less rigid as compare to the mechanical bearing.
 Therefore, the levitation based bearing has an inherent tradeoff between the heat dissipation and the stiffness.
-In this paper, we discuss the design tradeoff for use of this SMB technology for a future CMB polarization experiment, in particular for use in space. 
-We present our prototype SMB system, rotor diameter of 384~mm, and the measurements of the spring constant and the damping to characterize the mechanical properties.
-In order to characterize the mechanical properties, we use a laser interferometer, which we can use in a lab but cannot use during observations. 
+In this paper, we discuss the design tradeoff for use of this SMB technology for a future CMB polarization experiment.
+We present our prototype SMB system, rotor diameter of 384~mm, and the measurements of the spring constant and the damping coefficient to characterize the mechanical properties.
+In order to characterize the mechanical properties, we use a laser displacement gauge, which we can use in a lab but cannot use during observations.
 As an alternative solution, we also introduce a Hall sensor to monitor the mechanical properties simultaneously.
-We discuss the consistency between the two independent measurements and propose the concise passive technic to monitor the vibrational motion of the rotor magnet at the cryogenic temperature. 
-Finally we projects the results toward the design of the SMB system for the polarization modulator. 
+We discuss the consistency between the two independent measurements and propose the concise passive technic to monitor the vibrational motion of the rotor magnet at the cryogenic temperature.
+Finally we projects the results toward the design of the SMB system for the polarization modulator.
 %\cred{tomo: continue editing from here}It is possible to achieve minimal heat dissipation at cryogenic temperature with the SMB.
 %The SMB is developed mainly for industries such as flywheel energy storage,
 %although the polarization modulator is one of unique applications and it plays critical role in the CMB polarization experiments.
@@ -82,13 +82,13 @@ Finally we projects the results toward the design of the SMB system for the pola
 \section*{Experimental Setup}
 
 
-We conducted vibration measurement using a Styro- foam bucket with liquid nitrogen as shown in Figure \ref{fig:d400} (left).
+We conducted vibration measurement using a Styrofoam bucket with liquid nitrogen as shown in the left pannel of the Figure \ref{fig:d400}.
 Although the SMB system is operated inside the 4~K cryostat in an actual CMB observation, a liquid nitrogen temperature (77~K) is sufficient for the vibration measurement.
 
 We prepare the SMB system with inner diameter of 384~mm.
 Due to the relatively large diameter, The ring shaped magnet, which consists of 16 segmented NdFeB magnets, are used as the rotor magnet.
 Each segmented magnet is magnetized axially with the magnetic remnance of 1.24~T.
-A YBa$_{2}$Cu$_{3}$O$_{\mathrm{x}}$ (YBCO) superconductor is used as the stator, which is one of High Temperature Superconductors and its transition temperature is $\sim$ 95~K.
+A Y$_{1.65}$Ba$_{2}$Cu$_{3}$O$_{\mathrm{x}}$ (YBCO) superconductor is used as the stator, which is one of High Temperature Superconductors and its transition temperature is $\sim$ 95~K.
 The YBCO array is formed in a ring shape using three-seeded YBCO tiles.
 The NdFeB ring magnet and the YBCO array are fabricated by Adelwitz Technologiezentrum GmbH (ATZ) company in Germany \cite{ATZ}.
 The YBCO array is submerged by the liquid nitrogen but the rotor magnet is exposed to the room environment.
@@ -98,10 +98,9 @@ The levitation height, defined as the distance between the bottom of the rotor m
 We measure the rotor vibration in the axial direction with four different levitation heights (3~mm, 6~mm, 9~mm and 12~mm).
 In order to enhance the vibration amplitude, an external impulse force was applied by hand in the axial direction.
 
-The displacement of the rotor is monitored by a laser displacement gauge (keyence LK-500),
-which is mounted by an aluminum frame jig at a distance of 260~mm from the top of the rotor magnet as shown in Figure \ref{fig:d400} (left).
-Since The displacement of the rotor magnet due to the vibration also affects the magnetic field,
-we also measure the magnetic field by a Hall sensor mounted at the top surface of the YBCO array.
+The displacement of the rotor is monitored by a laser displacement gauge,
+which is mounted on an aluminum frame at a distance of 260~mm from the rotor magnet as shown in the left pannel of the Figure \ref{fig:d400}.
+We also monitor the magnetic field by a cryogenic Hall sensor installed between the rotor magnet and YBCO array.
 
 \begin{figure}[htbp]
   \centering
@@ -119,7 +118,7 @@ we also measure the magnetic field by a Hall sensor mounted at the top surface o
 
 \section*{Result and Discussion}
 
-An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model shown in Figure \ref{fig:d400} (right).
+An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model [cite!] shown in the right pannel of the Figure \ref{fig:d400}.
 The motion of this model is expressed by
 \begin{equation}
   m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
@@ -132,13 +131,16 @@ Under the condition of the damping motion, the solution of the equation (\ref{eq
   \label{eq:damping}
 \end{equation}
 where $\zeta = R / 2 \sqrt{mk_{z}}$ is the damping ratio and $\omega_{0} = \sqrt{k_{z}/m}$ is the undamped angular frequency.
-The parameters of $A$ and $\phi$ are the amplitude and the phase determined by the magnitude and timing of the external impulse force.
-Thus, these values are changed every time.
+The parameters of $A$ and $\phi$ are the amplitude and the phase determined by the magnitude and the timing of the external impulse force.
+Thus, these values are treated as an arybitary values.
 
-Figure \ref{fig:vibration_up} shows the laser gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
-We fit the data with equation (\ref{eq:damping}) and derive the unknown parameters of $\zeta$ and $\omega_{0}$ for each levitation height.
+Figure \ref{fig:vibration_up} shows the laser displacement gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
+We fit the data with equation (\ref{eq:damping}) and derive the fitting parameters of $\zeta$ and $\omega_{0}$ for each levitation height.
 The fitting result of the Hall sensor output with the levitation height of 12~mm is shown the right plot of Figure \ref{fig:vibration}.
-The fitted parameters are summarized with these statistical error values in Table \ref{tab:fit_result}.
+The fitted parameters are summarized with their statistical error values in Table \ref{tab:fit_result}.
+As a first order, the parameters from the laser displacement gauge and the Hall sensor are consistent.
+In an actual application, the measurement by the laser displacement gauge is not ideal from the view points of heat dissipation and interference with the signal.
+This result indicates that the Hall sensor can be an alternative to the laser displacement gauge for the vibration measurement.
 
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[htbp]
@@ -146,7 +148,7 @@ The fitted parameters are summarized with these statistical error values in Tabl
   \newcolumntype{Y}{>{\centering\arraybackslash}p{25mm}}
   \begin{tabular}{c|YYYY}
     \hline
-    & \multicolumn{4}{c}{Laser gauge} \\
+    & \multicolumn{4}{c}{laser displacement gauge} \\
     h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [Nm] \\ \hline
     3  & $2.1 \pm 0.3 \times10^{-2}$ & 331.8 $\pm$ 0.8 & 42.0 $\pm$ 5.6 & $3.3 \pm 0.02 \times10^{5}$ \\
     6  & $2.7 \pm 0.1 \times10^{-2}$ & 194.0 $\pm$ 0.2 & 31.0 $\pm$ 2.5 & $1.1 \pm 0.01 \times10^{5}$ \\
@@ -162,8 +164,7 @@ The fitted parameters are summarized with these statistical error values in Tabl
     \hline
 
   \end{tabular}
-  \caption{The summary of the fitted parameters from the vibration measurements. h is the levitation height. $\zeta$ and $\omega_{0}$ is the damping ratio and undamped angular frequency.
-    $R$ is the damping coefficient and $k_{z}$ is the spring constant.
+  \caption{The summary of the fitted parameters from the vibration measurements for each levitation height (h). The parameters of $\zeta$ and $\omega_{0}$ represent a damping ratio and an undamped angular frequency. The variables of $R$ and $k_{z}$ represent a damping coefficient and a spring constant.}
     \label{tab:fit_result}}
 \end{table}
 \renewcommand{\arraystretch}{1.0}
@@ -177,21 +178,25 @@ The fitted parameters are summarized with these statistical error values in Tabl
     \centering
     \includegraphics[width=70mm]{vibration_fit.eps}
   \end{minipage}
-  \caption{(Left) The laser gauge output and the Hall sensor output as a function of time with the levitation height of 9~mm in top and bottom panels, respectively.
+  \caption{(Left) The laser displacement gauge output and the Hall sensor output as a function of time with the levitation height of 9~mm in top and bottom panels, respectively.
     (Right) The fitting result of the Hall sensor output with the levitation height of 12~mm.}
   \label{fig:vibration}
 \end{figure}
 
-We also perform a Fourier analyze to the data of the Hall sensor output.
-Figure \ref{fig:fft} (left) shows the result of performing Fourier transform for levitation height of 3~mm, 6~mm, 9~mm and 12~mm.
-There are remarkable peaks in each levitation height.
-These values correspond to the specific frequency $f_{0}$ of the SMB system.
-The spring constant $k_{z}$ is derived by
+We also perform a Fourier transformation to the data from the Hall sensor.
+The left pannel of the Figure \ref{fig:fft} shows the result of Fourier transformation for each levitation height.
+The distinctive peak in the plot corresponds to the natural frequency of the SMB system.
+The modulation frequency of the signal by the polarization modulator is less than 20~Hz.
+Thus, the natural frequency does not resonate if the levitation height is higher than 12~mm.
+The spring constant is also derived calculating by
 \begin{equation}
-  k_{z} = m (2 \pi f_{0})^{2}.
+  k_{z} = m (2 \pi f_{0})^{2},
+where $f_{0}$ is the natural frequency of the SMB.
 \end{equation}
-The spring constants from the Fourier analyze are compared with the fitting result in Figure \ref{fig:fft} (Right).
-These values are consistent between the Fourier analyze and the fitting, and they are in order of $10^{4} \sim 10^{5}$ depending on levitation heights.
+The spring constant from the Fourier transformation is compared with the fitting result in the right pannel of the Figure \ref{fig:fft}.
+There is no significant difference depending on the analysis method.
+For the polarization modulator, the typical requirement of the spring constant is $10^{5}$~Nm.
+The SMB system in this paper can satisfy the requirement the levitation height is less than 6~mm.
 
 \begin{figure}[htbp]
   \centering
@@ -208,10 +213,14 @@ These values are consistent between the Fourier analyze and the fitting, and the
   \label{fig:fft}
 \end{figure}
 
-For the polarization modulator, the typical requirement of the deviation of the HWP optical axis is less than 1~mm.
-It corresponds to the spring constant of >$10^{6}$~Nm when the total mass of the rotor including the mass of the HWP is $>30$~kg.
-Since the spring constant is proportional to the mass of the rotor, the result of this measurement can be scaled by factor 10.
-Therefore, the current SMB system satisfies the requirement if the levitation height is less then 6~mm.
+We demonstrate that the spring constant and the damping coefficient increase by reducing the levitation height from the measurement.
+The spring constant corresponds to the stiffness of the SMB.
+On the other hand, the damping coefficient corresponds to the heat dissipation of the SMB from an energy loss associated with magnetic hysterisys.
+The heat dissipation from a magnetic friction during the rotation also increases with the smaller levitation height.
+This indicates that the SMB has a tradeoff between the stiffness and the heat dissipation.
+
+
+
 The damping coefficient corresponds to an energy loss by an eddy current, and it leads to the heating of the HWP.
 The requirement of the damping coefficient depends on the experiment, while we indicate it is adjustable by the levitation height.
 From the viewpoint of vibration, it is efficient to set the levitation height as less as possible.
