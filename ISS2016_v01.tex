@@ -150,8 +150,11 @@ We fit the data with Equation~(\ref{eq:damping}) and derive the fitting paramete
 The fitting result of the Hall sensor output with the levitation height of 12~mm is shown in Figure \ref{fig:vibration} (b).
 The fitted parameters are summarized with their statistical error values in Table \ref{tab:fit_result}.
 The parameters from the laser displacement gauge and the Hall sensor are consistent.
-In an actual application, the measurement by the laser displacement gauge is not ideal from the view points of heat dissipation and interference with the signal.
-This result indicates that the Hall sensor can be an alternative to the laser displacement gauge for the vibration measurement.
+The detailed comparison between the two results is beyond the scope of this paper. 
+In order for the two methods to be identical, the change of the rotor magnetic field and the spatial displacement of the rotor have to be linearly related, but this is not necessary guaranteed. 
+In an actual application, the measurement by using a laser displacement gauge is not ideal because entire SMB system has to be kept below 10~K. 
+%from the view points of heat dissipation and interference with the signal.
+This result indicates that the Hall sensor can be an alternative tool against to the laser displacement gauge for the vibration measurement passibly.
 
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[htbp]
@@ -162,14 +165,14 @@ This result indicates that the Hall sensor can be an alternative to the laser di
   \begin{tabular}{c|YYYY}
     \hline
     & \multicolumn{4}{c}{laser displacement gauge} \\
-    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [Nm] \\ \hline
+    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [N/m] \\ \hline
     3  & $2.1 \pm 0.3 \times10^{-2}$ & 331.8 $\pm$ 0.8 & 42.0 $\pm$ 5.6 & $3.3 \pm 0.02 \times10^{5}$ \\
     6  & $2.7 \pm 0.1 \times10^{-2}$ & 194.0 $\pm$ 0.2 & 31.0 $\pm$ 2.5 & $1.1 \pm 0.01 \times10^{5}$ \\
     9  & $2.3 \pm 0.1 \times10^{-2}$ & 138.2 $\pm$ 0.2 & 19.1 $\pm$ 2.5 & $5.7 \pm 0.02 \times10^{4}$ \\
     12 & $1.8 \pm 0.1 \times10^{-2}$ & 111.7 $\pm$ 0.1 & 11.8 $\pm$ 1.2 & $3.7 \pm 0.01 \times10^{4}$ \\
     \hline
     & \multicolumn{4}{c}{Hall sensor} \\
-    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [Nm] \\ \hline
+    h [mm] & $\zeta$  & $\omega_{0}$ [rad/s] & $R$ [N$\cdot$s/m] & $k_{z}$ [N/m] \\ \hline
     3  & $2.4 \pm 0.1 \times10^{-2}$ & 299.3 $\pm$ 0.2 & 43.5 $\pm$ 2.5 & $2.7 \pm 0.03\times10^{5}$ \\
     6  & $2.3 \pm 0.1 \times10^{-2}$ & 195.7 $\pm$ 0.1 & 27.1 $\pm$ 1.3 & $1.2 \pm 0.01\times10^{5}$ \\
     9  & $2.4 \pm 0.1 \times10^{-2}$ & 136.4 $\pm$ 0.2 & 20.2 $\pm$ 2.8 & $5.6 \pm 0.01\times10^{4}$ \\
@@ -200,11 +203,11 @@ This result indicates that the Hall sensor can be an alternative to the laser di
 \end{figure}
 
 We also perform a Fourier transformation to the data from the Hall sensor.
-The figure \ref{fig:fft} (a) shows the result of Fourier transformation for each levitation height.
+Figure~\ref{fig:fft} (a) shows the result of Fourier transformation for each levitation height.
 The distinctive peak in the plot corresponds to the natural frequency of the SMB system.
-The modulation frequency of the signal by the polarization modulator is less than 20~Hz.
+The modulation frequency of the signal by the polarization modulator is about 20~Hz.
 Thus, the natural frequency does not resonate if the levitation height is higher than 12~mm.
-The spring constant is also derived calculating by
+The spring constant is also derived by
 \begin{equation}
   k_{z} = m (2 \pi f_{0})^{2},
 \end{equation}
@@ -212,7 +215,7 @@ where $f_{0}$ is the natural frequency of the SMB.
 The spring constant from the Fourier transformation is compared with the fitting result in the figure \ref{fig:fft} (b).
 There is no significant difference depending on the analysis method.
 For the polarization modulator, the typical requirement of the spring constant is $10^{5}$~Nm.
-This SMB system can satisfy the requirement the levitation height is less than 6~mm.
+This SMB system can satisfy the requirement if the levitation height is less than 6~mm.
 
 \begin{figure}[htbp]
   \centering
