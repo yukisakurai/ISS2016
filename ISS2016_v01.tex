@@ -1,7 +1,8 @@
-\documentclass[a4paper]{jpconf}
+\documentclass[a4paper,11pt]{jpconf}
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{array}
+\usepackage{subfigure}
 \newcommand{\cred}[1]{{\color{red}#1}}
 
 \begin{document}
@@ -31,7 +32,7 @@ In this presentation, we present the measurement results of the vibration charac
 We characterize the vibrational properties as the spring constant and the damping, and discuss the projected performance of this technology toward the use in future space missions.
 \end{abstract}
 
-\section*{Introduction}
+\section{Introduction}
 
 A cosmic microwave background (CMB) is electromagnetic microwave radiation from the big bang.
 It is still observable isotropically from the whole sky today.
@@ -79,10 +80,10 @@ Finally we projects the results toward the design of the SMB system for the pola
 %In this paper, we describe the result of the vibration measurement of the SMB of 384~mm diameter.
 %Since the typical aperture size of a CMB telescope is 400~mm, so that this diameter (D=384~mm) is close to an actual application.
 
-\section*{Experimental Setup}
+\section{Experimental Setup}
 
 
-We conducted vibration measurement using a Styrofoam bucket with liquid nitrogen as shown in the left panel of the Figure \ref{fig:d400}.
+We conducted vibration measurement using a Styrofoam bucket with liquid nitrogen as shown in the figure \ref{fig:d400} (a).
 Although the SMB system is operated inside the 4~K cryostat in an actual CMB observation, a liquid nitrogen temperature (77~K) is sufficient for the vibration measurement.
 
 We prepare the SMB system with inner diameter of 384~mm.
@@ -98,26 +99,30 @@ We measure the rotor vibration in the axial direction with four different levita
 In order to enhance the vibration amplitude, an external impulse force is applied by hand in the axial direction.
 
 The displacement of the rotor is monitored by a laser displacement gauge,
-which is mounted on an aluminum frame at a distance of 260~mm from the rotor magnet as shown in the left panel of the Figure \ref{fig:d400}.
+which is mounted on an aluminum frame at a distance of 260~mm from the rotor magnet as shown in the figure \ref{fig:d400} (a).
 We also monitor the magnetic field by a cryogenic Hall sensor installed between the rotor magnet and the YBCO array.
 
 \begin{figure}[htbp]
   \centering
   \begin{minipage}{0.6\hsize}
-    \includegraphics[width=85mm]{D400mm.eps}
+    \subfigure[]{
+      \includegraphics*[width=95mm,height=60mm]{D400mm.eps}
+    }
   \end{minipage}
   \begin{minipage}{0.3\hsize}
     \centering
-    \includegraphics[width=50mm]{SpringSystem.eps}
+    \subfigure[]{
+      \includegraphics*[width=50mm,height=60mm]{SpringSystem.eps}
+    }
   \end{minipage}
-  \caption{(Left) The experimental setup for the vibration measurements for $D=384$~mm. (Right) Mass-Spring-Damper model.}
+  \caption{(a) The experimental setup for the vibration measurements for $D=384$~mm. (b) The Mass-Spring-Damper model.}
   \label{fig:d400}
 \end{figure}
 
 
-\section*{Result and Discussion}
+\section{Result and Discussion}
 
-An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model \cite{mds} shown in the right panel of the Figure \ref{fig:d400}.
+An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model \cite{mds} shown in the figure \ref{fig:d400} (b).
 The motion of this model is expressed by
 \begin{equation}
   m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
@@ -133,9 +138,9 @@ where $\zeta = R / 2 \sqrt{mk_{z}}$ is the damping ratio and $\omega_{0} = \sqrt
 The parameters of $A$ and $\phi$ are the amplitude and the phase determined by the magnitude and the timing of the external impulse force.
 Thus, these values are treated as an arbitrary values.
 
-The left panel of the Figure \ref{fig:vibration} shows the laser displacement gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
+The figure \ref{fig:vibration} (a) shows the laser displacement gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
 We fit the data with equation (\ref{eq:damping}) and derive the fitting parameters of $\zeta$ and $\omega_{0}$ for each levitation height.
-The fitting result of the Hall sensor output with the levitation height of 12~mm is shown the right plot of Figure \ref{fig:vibration}.
+The fitting result of the Hall sensor output with the levitation height of 12~mm is shown in the figure \ref{fig:vibration} (b).
 The fitted parameters are summarized with their statistical error values in Table \ref{tab:fit_result}.
 As a first order, the parameters from the laser displacement gauge and the Hall sensor are consistent.
 In an actual application, the measurement by the laser displacement gauge is not ideal from the view points of heat dissipation and interference with the signal.
@@ -144,6 +149,8 @@ This result indicates that the Hall sensor can be an alternative to the laser di
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[htbp]
   \centering
+  \caption{The summary of the fitted parameters from the vibration measurements for each levitation height (h). The parameters of $\zeta$ and $\omega_{0}$ represent a damping ratio and an undamped angular frequency. The variables of $R$ and $k_{z}$ represent a damping coefficient and a spring constant.\label{tab:fit_result}}
+  \vspace{2mm}
   \newcolumntype{Y}{>{\centering\arraybackslash}p{25mm}}
   \begin{tabular}{c|YYYY}
     \hline
@@ -162,26 +169,31 @@ This result indicates that the Hall sensor can be an alternative to the laser di
     12 & $2.4 \pm 0.1 \times10^{-2}$ & 108.0 $\pm$ 0.1 & 15.7 $\pm$ 0.8 & $3.5 \pm 0.01\times10^{4}$ \\
     \hline
   \end{tabular}
-  \caption{The summary of the fitted parameters from the vibration measurements for each levitation height (h). The parameters of $\zeta$ and $\omega_{0}$ represent a damping ratio and an undamped angular frequency. The variables of $R$ and $k_{z}$ represent a damping coefficient and a spring constant.\label{tab:fit_result}}
 \end{table}
 \renewcommand{\arraystretch}{1.0}
 
 \begin{figure}[htbp]
   \centering
   \begin{minipage}{0.45\hsize}
-  \includegraphics[width=70mm]{vibration_up.eps}
+    \subfigure[]{
+      \includegraphics[width=70mm]{vibration_up.eps}
+    }
+  \end{minipage}
+  \begin{minipage}{0.1\hsize}
   \end{minipage}
   \begin{minipage}{0.45\hsize}
     \centering
-    \includegraphics[width=70mm]{vibration_fit.eps}
+    \subfigure[]{
+      \includegraphics[width=70mm]{vibration_fit.eps}
+    }
   \end{minipage}
-  \caption{(Left) The laser displacement gauge output and the Hall sensor output as a function of time with the levitation height of 9~mm in top and bottom panels, respectively.
-    (Right) The fitting result of the Hall sensor output with the levitation height of 12~mm.}
+  \caption{(a) The laser displacement gauge output and the Hall sensor output as a function of time with the levitation height of 9~mm in top and bottom panels, respectively.
+    (b) The fitting result of the Hall sensor output with the levitation height of 12~mm.}
   \label{fig:vibration}
 \end{figure}
 
 We also perform a Fourier transformation to the data from the Hall sensor.
-The left panel of the Figure \ref{fig:fft} shows the result of Fourier transformation for each levitation height.
+The figure \ref{fig:fft} (a) shows the result of Fourier transformation for each levitation height.
 The distinctive peak in the plot corresponds to the natural frequency of the SMB system.
 The modulation frequency of the signal by the polarization modulator is less than 20~Hz.
 Thus, the natural frequency does not resonate if the levitation height is higher than 12~mm.
@@ -190,7 +202,7 @@ The spring constant is also derived calculating by
   k_{z} = m (2 \pi f_{0})^{2},
 \end{equation}
 where $f_{0}$ is the natural frequency of the SMB.
-The spring constant from the Fourier transformation is compared with the fitting result in the right panel of the Figure \ref{fig:fft}.
+The spring constant from the Fourier transformation is compared with the fitting result in the figure \ref{fig:fft} (b).
 There is no significant difference depending on the analysis method.
 For the polarization modulator, the typical requirement of the spring constant is $10^{5}$~Nm.
 This SMB system can satisfy the requirement the levitation height is less than 6~mm.
@@ -198,14 +210,18 @@ This SMB system can satisfy the requirement the levitation height is less than 6
 \begin{figure}[htbp]
   \centering
   \begin{minipage}{0.45\hsize}
-    \includegraphics[width=70mm]{vibration_fft_B.eps}
+    \subfigure[]{
+      \includegraphics[width=70mm]{vibration_fft_B.eps}
+    }
   \end{minipage}
   \begin{minipage}{0.45\hsize}
     \centering
-    \includegraphics[width=70mm]{SpringConstant.eps}
+    \subfigure[]{
+      \includegraphics[width=70mm]{SpringConstant.eps}
+    }
   \end{minipage}
-  \caption{(Left) The power spectrum of the Hall sensor output as a function of frequency for levitation height of 3~mm, 6~mm, 9~mm and 12~mm.
-    (Right) The spring constant and the damping coefficient as a function of levitation heights.
+  \caption{(a) The power spectrum of the Hall sensor output as a function of frequency for levitation height of 3~mm, 6~mm, 9~mm and 12~mm.
+    (b) The spring constant and the damping coefficient as a function of levitation heights.
     The red and green points are derived from the fit with damping model, and the blue points are derived from the Fourier transformation.}
   \label{fig:fft}
 \end{figure}
@@ -222,7 +238,7 @@ In this measurement, we use the segmented ring magnet with axial magnetization.
 The further effort of designing an optimal magnetic circuit can be improve the total performance of the SMB system.
 The measurement and evaluation of the magnetic circuit will be discussed in future papers.
 
-\section*{Conclusion}
+\section{Conclusion}
 We have conducted the vibration measurements of the prototype SMB system with the diameter of $\phi$=384~mm for the polarization modulator used in CMB polarization experiments.
 From the measurement, we derive the spring constant and the damping coefficient using both the laser displacement gauge and the cryogenic Hall sensor.
 The spring constant is in the order of $10^{4} \sim 10^{5}$~Nm and the damping coefficient is $15\sim45$ depending on levitation height.
@@ -232,7 +248,7 @@ We demonstrate the spring constant and the damping coefficient are inversely pro
 We discuss the trade-off of the SMB system between the stiffness and the heat dissipation.
 The further effort of designing an optimal magnetic circuit can be improve the total performance of the SMB system.
 
-\section*{Acknowledgment}
+\section{Acknowledgment}
 The author would like to thank to Dr. H. Imada at ISAS/JAXA.
 This work was supported by MEXT KAKENHI Grant Numbers JP15H05441 and JSPS Core-to-Core Program, A. Advanced Research Networks.
 This work was also supported by World Premier International Research Center Initiative (WPI), MEXT, Japan.
