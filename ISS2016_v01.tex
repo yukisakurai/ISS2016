@@ -99,15 +99,15 @@ The critical temperature of this high temperature superconductor is $\sim$ 95~K 
 The YBCO array is formed in a ring shape using three-seeded YBCO tiles.
 
 The YBCO array is submerged by the liquid nitrogen but the rotor magnet is exposed to the room environment.
-We set a gap between the rotor magnet and YBCO array with aluminum plates at room temperature, and then a liquid nitrogen is poured.
+We set a gap between the rotor magnet and YBCO array with aluminum plates at room temperature, and then a liquid nitrogen is poured with a presence of the magnetic field, i.e. field-cooling process.
 After the temperature of the YBCO array becomes below its transition temperature, the plates are removed for magnetic levitation.
 The levitation height, defined as the distance between the bottom of the rotor magnet and the top of the YBCO array, is controlled by the thickness of the aluminum plate.
-We measure the rotor vibration in the axial direction with four different levitation heights (3~mm, 6~mm, 9~mm and 12~mm).
-In order to enhance the vibration amplitude, an external impulse force is applied by hand in the axial direction.
+We measure the rotor vibration in the axial direction with four different levitation heights (3, 6, 9 and 12~mm).
+In order to enhance the vibrational amplitude, an external impulse force is applied by hand in the axial direction.
 
 The displacement of the rotor is monitored by a laser displacement gauge,
-which is mounted on an aluminum frame at a distance of 260~mm from the rotor magnet as shown in the figure \ref{fig:d400} (a).
-We also monitor the magnetic field by a cryogenic Hall sensor installed between the rotor magnet and the YBCO array.
+which is mounted on an aluminum frame at a distance of 260~mm from the rotor magnet as shown in Figure \ref{fig:d400} (a).
+We also monitor the vibration via magnetic field using a cryogenic Hall sensor installed between the rotor magnet and the YBCO array.
 
 \begin{figure}[htbp]
   \centering
@@ -122,14 +122,14 @@ We also monitor the magnetic field by a cryogenic Hall sensor installed between 
       \includegraphics*[width=50mm,height=60mm]{SpringSystem.eps}
     }
   \end{minipage}
-  \caption{(a) The experimental setup for the vibration measurements for $D=384$~mm. (b) The Mass-Spring-Damper model.}
+  \caption{(a) The experimental setup for the vibration measurements for $D=384$~mm. (b) The Mass-spring-damper model.}
   \label{fig:d400}
 \end{figure}
 
 
 \section{Result and Discussion}
 
-An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model \cite{mds} shown in the figure \ref{fig:d400} (b).
+An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model \cite{mds} shown in Figure \ref{fig:d400} (b).
 The motion of this model is expressed by
 \begin{equation}
   m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
@@ -143,13 +143,13 @@ Under the condition of the damping motion, the solution of the equation (\ref{eq
 \end{equation}
 where $\zeta = R / 2 \sqrt{mk_{z}}$ is the damping ratio and $\omega_{0} = \sqrt{k_{z}/m}$ is the undamped angular frequency.
 The parameters of $A$ and $\phi$ are the amplitude and the phase determined by the magnitude and the timing of the external impulse force.
-Thus, these values are treated as an arbitrary values.
+Thus, these values can be any values.
 
-The figure \ref{fig:vibration} (a) shows the laser displacement gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
-We fit the data with equation (\ref{eq:damping}) and derive the fitting parameters of $\zeta$ and $\omega_{0}$ for each levitation height.
-The fitting result of the Hall sensor output with the levitation height of 12~mm is shown in the figure \ref{fig:vibration} (b).
+Figure~\ref{fig:vibration} (a) shows the laser displacement gauge output and the Hall sensor output as a function of time at the levitation height of 9~mm.
+We fit the data with Equation~(\ref{eq:damping}) and derive the fitting parameters of $\zeta$ and $\omega_{0}$ for each levitation height.
+The fitting result of the Hall sensor output with the levitation height of 12~mm is shown in Figure \ref{fig:vibration} (b).
 The fitted parameters are summarized with their statistical error values in Table \ref{tab:fit_result}.
-As a first order, the parameters from the laser displacement gauge and the Hall sensor are consistent.
+The parameters from the laser displacement gauge and the Hall sensor are consistent.
 In an actual application, the measurement by the laser displacement gauge is not ideal from the view points of heat dissipation and interference with the signal.
 This result indicates that the Hall sensor can be an alternative to the laser displacement gauge for the vibration measurement.
 
