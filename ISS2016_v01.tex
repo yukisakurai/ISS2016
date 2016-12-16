@@ -118,7 +118,7 @@ We also monitor the magnetic field by a cryogenic Hall sensor installed between 
 
 \section*{Result and Discussion}
 
-An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model [cite!] shown in the right pannel of the Figure \ref{fig:d400}.
+An axial vibration of the rotor can be described by a damping motion of a mass-spring-damper model \cite{mds} shown in the right pannel of the Figure \ref{fig:d400}.
 The motion of this model is expressed by
 \begin{equation}
   m \frac{\partial^{2} x}{\partial^{2} t} + R \frac{\partial x}{\partial t} + k_{z} x = 0,
@@ -194,7 +194,7 @@ where $f_{0}$ is the natural frequency of the SMB.
 The spring constant from the Fourier transformation is compared with the fitting result in the right pannel of the Figure \ref{fig:fft}.
 There is no significant difference depending on the analysis method.
 For the polarization modulator, the typical requirement of the spring constant is $10^{5}$~Nm.
-The SMB system in this paper can satisfy the requirement the levitation height is less than 6~mm.
+This SMB system can satisfy the requirement the levitation height is less than 6~mm.
 
 \begin{figure}[htbp]
   \centering
@@ -211,29 +211,27 @@ The SMB system in this paper can satisfy the requirement the levitation height i
   \label{fig:fft}
 \end{figure}
 
-We demonstrate that the spring constant and the damping coefficient increase by reducing the levitation height from the measurement.
+From this measurement, we demonstrate that the spring constant and the damping coefficient are inversely proportional to the levitation height.
 The spring constant corresponds to the stiffness of the SMB.
-On the other hand, the damping coefficient corresponds to the heat dissipation of the SMB from an energy loss associated with magnetic hysterisys.
-The heat dissipation from a magnetic friction during the rotation also increases with the smaller levitation height.
-This indicates that the SMB has a tradeoff between the stiffness and the heat dissipation.
-
-
-
-The damping coefficient corresponds to an energy loss by an eddy current, and it leads to the heating of the HWP.
-The requirement of the damping coefficient depends on the experiment, while we indicate it is adjustable by the levitation height.
-From the viewpoint of vibration, it is efficient to set the levitation height as less as possible.
-However, we have to consider the increase of the HWP heat due to magnetic friction.
-A trade-off study with enough knowledge of both vibrational and thermal characteristics will be discussed in the future paper.
-In addition, the further effort of designing a new magnetic circuit can be improve the SMB system.
+The damping coefficient corresponds to an energy loss associated with magnetic hysteresis.
+From the viewpoint of the stiffness, it is efficient to set the levitation height as less as possible.
+However, the increase of the energy loss leas to the noise from the heat dissioation of the HWP.
+In addition, The heat dissipation from a magnetic friction during the rotation also increases by reducing the levitation height.
+Thus, the SMB system has a tradeoff between the stiffness and the heat dissipation.
+For the polarization modulator, the levitation height of the SMB is an important parameter to be determine by the experimental requirement.
+In this measurement, we use the segmented ring magnet with axial magnetization.
+The further effort of designing an optimal magnetic circuit can be improve the total performance of the SMB system.
+The measurement and evaluation of the magnetic circuit will be discussed in future papers.
 
 \section*{Conclusion}
 We have conducted the vibration measurements of the prototype SMB system with the diameter of $\phi$=384~mm for the polarization modulator used in CMB polarization experiments.
-From the measurement, we derive the spring constant and the damping coefficient for each levitation height.
-The spring constant is important to minimize the deviation of the HWP optical axis.
-The damping coefficient is important to minimize the heat due to a disturbance.
+From the measurement, we derive the spring constant and the damping coefficient using both the laser displacement gauge and the cryogenic Hall sensor.
 The spring constant is in the order of $10^{4} \sim 10^{5}$~Nm and the damping coefficient is $15\sim45$ depending on levitation height.
-If we assume the rotor mass with the HWP, we conclude the spring constant satisfies the typical requirement of $> 10^{6}$~Nm when the levitation height is less than 6~mm.
-As a future study, it is important to design a magnetic circuit in order to improve total performance of the SMB system in the polarization modulator.
+The result has consystensy between the laser gauge and the Hall sensor.
+We conclude that the Hall sensor can be an alternative method to monitor the vibration of the SMB system.
+We also discuss the tradeoff of the SMB system between the stiffness and the heat dissipation.
+We demonstrate the stiffness and the heat dissipation is possible to control by the levitation height.
+The further effort of designing an optimal magnetic circuit can be improve the total performance of the SMB system.
 
 \section*{Acknowledgment}
 The author would like to thank to Dr. H. Imada at ISAS/JAXA.
@@ -258,6 +256,9 @@ T. Masumura et al., "LiteBIRD: mission overview and design tradeoffs", Proc. SPI
 T. Matsumura, H. Kataza, S. Utsunomiya, R. Yamamoto, M. Hazumi, N. Katayama, Prototype design and performance of a polarization modulator for use in space using a superconducting magnetic bearing, IEEE, TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY 26 (3).
 \bibitem{atz}
 ATZ, http://www.atz-gmbh.com.
+\bibitem{mds}
+Ryoichi Takahata, Hirochika Ueyama, Atsushi Kubo, "Characterization of Superconducting Magnetic Bearings (Runnout Performance at High Speed Rotation)", Advances in Superconductivity IV, pp 1089-1092
+
 \end{thebibliography}
 
 
