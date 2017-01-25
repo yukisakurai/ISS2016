@@ -8,7 +8,7 @@
 [Action Items]
 (done) - correct typo:  “An superconducting magnetic bearing (SMB) is a contactless bearing [3]. it employs an..”
 - explain the relation between hall and laser data in figure 2 (a)
-- ncrease the font and figure size of figure 2
+(done) - increase the font and figure size of figure 2
 
 [Reviewr'c cooments]
 - You should correct typo of first line of third paragraph in Introduction section.
